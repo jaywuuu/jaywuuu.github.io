@@ -1,14 +1,120 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="js/marimo.js"></script>
-  <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>My awesome website built using bootstrap!</title>
 </head>
+
 <body>
-    <h1><center>Hello!</center></h1>
-    <div class="center-block container drop-shadow marimo-canvas">
-        <canvas class="center-block" id="marimo_canvas" width="800" height="600"></canvas>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">jaywu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
+            aria-expanded="false" aria-label="Toggle main navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="mainNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Another link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="mainNavDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cool dropdown</a>
+                    <div class="dropdown-menu shadow-lg" aria-labelledby="mainNavDropdown">
+                        <a class="dropdown-item" href="#">Item 1</a>
+                        <a class="dropdown-item" href="#">Item 2</a>
+                        <a class="dropdown-item" href="#">Item 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid m-0">
+        <div class="container d-md-flex flex-row">
+            <img class="img-fluid chicken-jumbotron rounded-circle shadow-lg" src="img/chicken.jpg">
+            <div class="d-flex flex-column p-3 p-md-5 m-3">
+                <h1 class="display-2">Look!</h1>
+                <blockquote class="blockquote">
+                    <p class="mb-0">"This chicken is awesome!"</p>
+                    <footer class="blockquote-footer">jaywu</footer>
+                </blockquote>
+                <blockquote class="blockquote">
+                    <p class="mb-0">"I agree!"</p>
+                    <footer class="blockquote-footer">Someone else</footer>
+                </blockquote>
+                <a class="btn btn-outline-primary btn-lg shadow text-truncate" href="#" role="button">Love this chicken!</a>
+            </div>
+        </div>
     </div>
+
+    <div class="d-block p-5 text-center text-truncate" style="background: url(img/whiskey.jpg) no-repeat center fixed; background-size: cover; height: 2000px">
+        <div class="container">
+            <h1 class="h1 heading-text text-white text-uppercase">Scroll for awhile</h1>
+            <hr class="hr-light"/>
+
+            <p class="py-5 text-justify body-text text-white">Here are some words.  Would you like some potatos?  Witty remarks everywhere!  Bees?  We'll see who brings home the most honey.</p>
+            <p class="font-weight-bold text-justify body-text text-white">This is a bold remark!</p>
+
+            <blockquote class="py-3 blockquote text-center">
+                <p class="m-1 h1 text-white">"I love potatoes!"</p>
+                <footer class="h3 blockquote-footer text-light">jaywu's wife</footer>
+            </blockquote>
+
+            <hr class="hr-light"/>
+
+            <h3 class="h3 my-5 heading-text text-white text-uppercase">Do you like buttons?</h3>
+            <a class="px-5 mx-2 btn btn-outline-light btn-lg shadow text-truncate" href="#" role="button">Yes</a>
+            <a class="px-5 mx-2 btn btn-outline-light btn-lg shadow text-truncate" href="#" role="button">No</a>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid m-0 bg-info">
+        <div class="container d-md-flex flex-row">
+            <div class="d-flex flex-column p-3 p-md-5 m-3 text-light">
+                <h1 class="display-2">And another thing!</h1>
+                <blockquote class="blockquote text-right">
+                    <p class="mb-0">"This green thing is also awesome!"</p>
+                    <footer class="blockquote-footer text-dark">jaywu</footer>
+                </blockquote>
+                <blockquote class="blockquote text-right">
+                    <p class="mb-0">"I agree!"</p>
+                    <footer class="blockquote-footer text-dark">Someone other guy</footer>
+                </blockquote>
+                <a class="btn btn-outline-light btn-lg shadow text-truncate" href="#" role="button">Love this green thing!</a>
+            </div>
+            <img class="p-2 bg-light img-fluid rounded-circle shadow-lg marimo-canvas" src="img/marimo-ball.png">
+        </div>
+    </div>
+
+
+    <footer class="footer py-3 bg-dark m-0">
+        <div class="text-center">
+            <span class="text-muted text-center">&copy; 2018. This is the bottom.</span>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
