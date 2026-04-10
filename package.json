@@ -1,0 +1,28 @@
+{
+  "name": "jaywuuu.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node scripts/generate-posts.js",
+    "build": "npm run generate && npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaywuuu/jaywuuu.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jaywuuu/jaywuuu.github.io/issues"
+  },
+  "homepage": "https://github.com/jaywuuu/jaywuuu.github.io#readme",
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "marked": "^18.0.0",
+    "typescript": "^6.0.2"
+  }
+}
