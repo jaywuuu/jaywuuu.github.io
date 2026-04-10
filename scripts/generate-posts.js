@@ -29,5 +29,8 @@ const posts = files.map(file => {
     };
 });
 
+// Sort posts by date in reverse chronological order
+posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 fs.writeFileSync(outputFile, JSON.stringify(posts, null, 2));
 console.log('Generated posts.json');

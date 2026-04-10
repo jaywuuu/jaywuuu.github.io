@@ -9,7 +9,8 @@ declare const marked: any;
 
 async function fetchPosts(): Promise<Post[]> {
     const response = await fetch('posts.json');
-    return await response.json();
+    const posts: Post[] = await response.json();
+    return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 function renderPostList(posts: Post[]) {

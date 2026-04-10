@@ -3,12 +3,12 @@
     "id": "hello-world",
     "title": "Hello World",
     "content": "# Hello World\n\nWelcome to my new TypeScript-powered blog!  This post is written in Markdown.\n",
-    "date": "2026-04-08T07:57:49.601Z"
+    "date": "2026-04-09 19:34:37 -0700"
   },
   {
     "id": "my-second-post",
     "title": "My Second Post",
     "content": "# My Second Post\n\nThis is another post to test the list rendering. TypeScript is fun!\n",
-    "date": "2026-04-08T07:57:49.606Z"
+    "date": "2026-04-09 19:34:37 -0700"
   }
 ]

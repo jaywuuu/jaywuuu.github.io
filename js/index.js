@@ -11,7 +11,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 function fetchPosts() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch('posts.json');
-        return yield response.json();
+        const posts = yield response.json();
+        return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
     });
 }
 function renderPostList(posts) {
